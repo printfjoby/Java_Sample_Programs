@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class SumChecker{
+	public static void main(String args[]){
+		int num1,num2,sum,sumcheck;
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter first number : ");
+        num1 = s.nextInt();
+        System.out.println("Enter second number : ");
+        num2 = s.nextInt();
+        System.out.println("Enter the expected sum : ");
+        sumcheck = s.nextInt();
+        
+        sum = num1 + num2;
+        
+        if(sum == sumcheck){
+        	System.out.println("Entered expected output is correct");
+        }
+        else{
+        	System.out.println("Entered expected output is wrong. The correct sum is : "+sum);
+        }
+        
+	}
+		
+}
