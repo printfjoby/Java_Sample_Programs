@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class ArrayListInsertion{
+	public static void main(String args[]){
+        
+		int n;
+		String str;
+		ArrayList<String> al= new ArrayList<String>();
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter the number of Strings : ");
+        n = s.nextInt();
+        
+        System.out.print("Enter the Strings : ");
+        
+        for(int i = 0; i <n; i++){
+        	 str=s.next();
+        	 al.add(str);
+        }
+        
+        System.out.println("ArrayList elements are : ");
+        
+        for (String str1 : al) { 		
+        System.out.println(str1);
+        }
+	}	
+}
